@@ -1,2 +1,2 @@
 # javaPractice
-		This program find integer to roman number below 1000.
+		This program find the roman number of given integer.
