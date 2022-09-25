@@ -7,10 +7,8 @@ public class LayoutDesign {
     public static void main(String[] args) {
         int initialValue = 0;
         JFrame frame = new JFrame();
-
         JLabel label = new JLabel(String.valueOf(initialValue));
         label.setBounds(230, 30, 100, 40);
-
         JButton addingButton = new JButton("increment");
         addingButton.setBounds(30, 100, 100, 40);
         addingButton.setFocusable(false);
@@ -33,7 +31,6 @@ public class LayoutDesign {
                 }
             }
         });
-
         JButton reset = new JButton("reset");
         reset.setBounds(270, 100, 150, 40);
         reset.setFocusable(false);
@@ -45,18 +42,13 @@ public class LayoutDesign {
                 }
             }
         });
-
         frame.add(label);
         frame.add(addingButton);
         frame.add(minusButton);
         frame.add(reset);
-
-
         frame.setSize(460, 200);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
         frame.setVisible(true);
-
     }
-
 }
