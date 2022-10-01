@@ -1,7 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class LayoutDesign {
     public static void main(String[] args) {
@@ -12,34 +9,26 @@ public class LayoutDesign {
         JButton addingButton = new JButton("increment");
         addingButton.setBounds(30, 100, 100, 40);
         addingButton.setFocusable(false);
-        addingButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (addingButton.equals(true)) {
-                    label.setText("increament button clicked.");
-                }
+        addingButton.addActionListener(e -> {
+            if (!addingButton.equals(true)) {
+                return;
             }
+            label.setText("increment button clicked.");
         });
-        JButton minusButton = new JButton("decreament");
+        JButton minusButton = new JButton("decrement");
         minusButton.setBounds(140, 100, 120, 40);
         minusButton.setFocusable(false);
-        minusButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (minusButton.equals(true)) {
-                    label.setText("decreament button clicked.");
-                }
+        minusButton.addActionListener(e -> {
+            if (minusButton.equals(true)) {
+                label.setText("decrement button clicked.");
             }
         });
         JButton reset = new JButton("reset");
         reset.setBounds(270, 100, 150, 40);
         reset.setFocusable(false);
-        reset.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (reset.equals(true)) {
-                    label.setText("reset button clicked.");
-                }
+        reset.addActionListener(e -> {
+            if (reset.equals(true)) {
+                label.setText("reset button clicked.");
             }
         });
         frame.add(label);
