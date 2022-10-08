@@ -1,0 +1,34 @@
+Arrays
+Arrays in java are static.
+which means fixed size and cannot be changed.
+
+1. Overview of Arrays
+
+2. Arrays in Java
+
+3. Building an Array
+
+
+Linked List
+
+Stacks
+
+Queues
+
+Hash Tables
+
+Binary Trees
+
+AVL Trees
+
+Heaps
+
+Tries
+
+Graphs
+
+Sorting Algorithms
+
+Searching Algorithms
+
+String Manipulation
