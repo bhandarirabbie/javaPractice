@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Rabbie
+ *
+ */
+module GenericJavaPratice {
+}
