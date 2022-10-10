@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author Rabbie
- *
- */
-module GenericJavaPratice {
-}
